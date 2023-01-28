@@ -1,5 +1,7 @@
-import app from "./server";
+import * as dotenv from "dotenv";
+dotenv.config();
 
+import app from "./server";
 app.listen(3001, () => {
-  console.log("listenint on 3001");
+  console.log("app running on 3001");
 });
